@@ -15,7 +15,7 @@ using namespace std;
 
 class IR {
     private:
-     static constexpr const char* dev = "/dev/ttyUSBir";
+     static constexpr const char* dev = "/dev/ttyUSB0";
 
     public:
      static string send(string code, int times){
