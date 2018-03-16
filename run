@@ -1,0 +1,9 @@
+!# /bin/bash
+
+cd wiringPi
+./build
+
+cd ../IR
+g++ IR.cpp -o Ir.o -lwiringPi
+
+./IR.o
