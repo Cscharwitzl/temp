@@ -13,7 +13,7 @@
 
 using namespace std;
 
-class IR : public {
+class IR {
     private:
      static constexpr const char* dev = "/dev/ttyUSBir";
 
@@ -69,9 +69,9 @@ class IR : public {
         return "{'success':'true','err':''}";
      }
 
-     static string read(string[] &params){
+     static string read(string mode){
 
-        string mode = params[0];
+
 
         if(mode.length()==1){
             mode = "0"+mode;
